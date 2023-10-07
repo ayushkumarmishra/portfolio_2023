@@ -3,6 +3,7 @@ import ProfilePic from "../../../public/developer.png";
 import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { LinkArrow } from "../Navbar/Icons";
 function Home() {
   return (
     <main className="w-full flex text-dark min-h-screen items-center bg-light">
@@ -40,6 +41,25 @@ function Home() {
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.
             </p>
+            <div className="flex items-center self-start mt-2">
+              <Link
+                to="/resume"
+                className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light 
+                hover:text-dark 
+          border-2 border-solid border-transparent hover:border-dark
+          "
+              >
+                Resume <LinkArrow className={"w-6 ml-1"} />
+              </Link>
+              <Link
+                to="/contacts"
+                className="flex items-center bg-white text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light 
+          border-2 border-solid border-transparent hover:border-dark
+          mx-4"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </Layout>

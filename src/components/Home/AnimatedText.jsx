@@ -36,7 +36,6 @@ const AnimatedText = ({ className = "", text }) => {
         variants={quote}
         initial="initial"
         animate="animate"
-        onHoverStart={{}}
       >
         {text.split(" ").map((words, index) => (
           <motion.span

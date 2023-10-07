@@ -20,7 +20,7 @@ const HeaderNavbar = () => {
         <motion.a
           href="https://www.linkedin.com/in/ayushkumarmishra/"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
@@ -29,7 +29,7 @@ const HeaderNavbar = () => {
         <motion.a
           href="https://github.com/ayushkumarmishra"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
@@ -37,7 +37,7 @@ const HeaderNavbar = () => {
         </motion.a>
         <motion.a
           href="/"
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
           target={"_blank"}
@@ -47,7 +47,7 @@ const HeaderNavbar = () => {
         <motion.a
           href="/"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
@@ -56,7 +56,7 @@ const HeaderNavbar = () => {
         <motion.a
           href="https://www.instagram.com/ayush_mishra04/"
           target={"_blank"}
-          whileHover={{ y: -2 }}
+          whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 ml-3"
         >
