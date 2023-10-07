@@ -1,6 +1,8 @@
 import Layout from "./Layout";
 import ProfilePic from "../../../public/developer.png";
 import AnimatedText from "./AnimatedText";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <main className="w-full flex text-dark min-h-screen items-center bg-light">
@@ -13,22 +15,27 @@ function Home() {
             <h1 className="flex flex-row items-center justify-start min-w-fit">
               <AnimatedText
                 text="Hii there!"
-                className="text-left !text-5xl !w-auto"
+                className="!font-normal text-left !text-2xl !w-auto"
               />
               <span
-                className="custom-wave text-5xl ml-2"
+                className="custom-wave text-4xl ml-2"
                 role="img"
                 aria-labelledby="wave"
               >
                 👋🏻
               </span>
             </h1>
-            <h2>
-              I&quot;m
-              <span> Ayush Mishra</span>
+            <div className="text-left text-4xl">
+              I&quot;m{" "}
+              <motion.span className="font-semibold">Ayush Mishra</motion.span>
+            </div>
+            <h2 className="py-2">
+              <AnimatedText
+                text={"Turning Vision Into Reality With Code And Design."}
+                className="!text-left !text-6xl !font-extrabold"
+              />
             </h2>
-            <h4>Turning Vision Into Reality With Code And Design.</h4>
-            <p>
+            <p className="my-4 text-base font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.
