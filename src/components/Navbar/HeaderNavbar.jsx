@@ -18,7 +18,7 @@ const HeaderNavbar = () => {
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="/"
+          href="https://www.linkedin.com/in/ayushkumarmishra/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -27,7 +27,7 @@ const HeaderNavbar = () => {
           <LinkedInIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://github.com/ayushkumarmishra"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -54,7 +54,7 @@ const HeaderNavbar = () => {
           <DiscordIcon />
         </motion.a>
         <motion.a
-          href="/"
+          href="https://www.instagram.com/ayush_mishra04/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
