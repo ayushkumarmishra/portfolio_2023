@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import HeaderNavbar from "./components/Navbar/HeaderNavbar";
 import Preloader from "./components/Preloader/preloader";
 import Cursor from "./components/Cursor/CustomCursor";
+import About from "./components/About/About";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -16,12 +17,13 @@ function App() {
 
   return (
     <>
-      {!isLoaded && <Preloader />} {/* Show preloader until isLoaded is true */}
+      {/* {!isLoaded && <Preloader />} Show preloader until isLoaded is true */}
       {isLoaded && (
         <div>
-          <Cursor />
+          {/* <Cursor /> */}
           <HeaderNavbar />
           <Home />
+          {/* <About /> */}
           <Footer />
         </div>
       )}
