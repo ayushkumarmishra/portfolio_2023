@@ -26,10 +26,14 @@ function Home() {
                 👋🏻
               </span>
             </h1>
-            <div className="text-left text-4xl">
+            <motion.div
+              className="text-left text-4xl"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
               I&quot;m{" "}
               <motion.span className="font-semibold">Ayush Mishra</motion.span>
-            </div>
+            </motion.div>
             <h2 className="py-2">
               <AnimatedText
                 text={"Turning Vision Into Reality With Code And Design."}
