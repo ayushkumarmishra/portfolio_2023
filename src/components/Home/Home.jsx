@@ -1,18 +1,62 @@
 import Layout from "./Layout";
 import ProfilePic from "../../../public/developer.png";
 import AnimatedText from "./AnimatedText";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { LinkArrow } from "../Navbar/Icons";
 import lightBulb from "../../../public/bulb.svg";
+import { useCallback, useEffect } from "react";
+
 function Home() {
+  const x = useMotionValue(200);
+  const y = useMotionValue(200);
+
+  const rotateX = useTransform(y, [0, 400], [45, -45]);
+  const rotateY = useTransform(x, [0, 400], [-45, 45]);
+
+  const handleMouse = useCallback(
+    (event) => {
+      const rect = event.currentTarget.getBoundingClientRect();
+      x.set(event.clientX - rect.left);
+      y.set(event.clientY - rect.top);
+    },
+    [x, y]
+  );
+
+  useEffect(() => {
+    function handleMouseLeave() {
+      x.set(200);
+      y.set(200);
+    }
+
+    const pictureElement = document.querySelector(".picture-container");
+
+    pictureElement.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      pictureElement.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [x, y]);
+
   return (
     <main className="w-full flex text-dark min-h-screen items-center bg-light">
       <Layout className="pt-0">
         <div className="flex items-center justify-between w-full">
-          <div className="w-1/2">
-            <img src={ProfilePic} alt="" className="w-full h-auto" />
-          </div>
+          <motion.div
+            className="w-1/2 picture-container"
+            onMouseMove={handleMouse}
+            style={{
+              rotateX,
+              rotateY,
+              transformStyle: "preserve-3d",
+            }}
+          >
+            <img
+              src={ProfilePic}
+              alt="profile_pic_ayush"
+              className="w-full h-auto"
+            />
+          </motion.div>
           <div className="w-1/2 font-montserrat flex flex-col self-center ">
             <h1 className="flex flex-row items-center justify-start min-w-fit">
               <AnimatedText
