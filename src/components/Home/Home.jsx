@@ -4,6 +4,7 @@ import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { LinkArrow } from "../Navbar/Icons";
+import lightBulb from "../../../public/bulb.svg";
 function Home() {
   return (
     <main className="w-full flex text-dark min-h-screen items-center bg-light">
@@ -67,6 +68,9 @@ function Home() {
           </div>
         </div>
       </Layout>
+      <div className="absolute right-8 bottom-8 inline-block w-28">
+        <img src={lightBulb} alt="ayush" className="w-full h-auto" />
+      </div>
     </main>
   );
 }
