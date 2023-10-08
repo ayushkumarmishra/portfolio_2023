@@ -5,7 +5,6 @@ import "./index.css";
 import Home from "./components/Home/Home.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Error from "./components/Error.jsx";
-
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +22,7 @@ const appRouter = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={appRouter}>
-      <div className="font-montserrat bg-light w-full min-h-screen">
+      <div className="font-montserrat bg-light w-full min-h-screen cursor">
         <App />
       </div>
     </RouterProvider>
