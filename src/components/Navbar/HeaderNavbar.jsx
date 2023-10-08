@@ -8,9 +8,17 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from "./Icons";
+import { Link } from "react-router-dom";
 const HeaderNavbar = () => {
   return (
     <header className="w-full px-20 py-2 font-medium flex items-center justify-between">
+      <Link to="/" className="flex justify-center items-center">
+        <img
+          className="h-20 w-auto"
+          src="../../../public/logo.png"
+          alt="logo_ayush_mishra"
+        />
+      </Link>
       <nav>
         <h2>
           <Logo />

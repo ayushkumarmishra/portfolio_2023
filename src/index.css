@@ -23,3 +23,12 @@
     display: inline-block;
     transform-origin: 70% 70%;
 }
+
+.preloader {
+    background: white url(loading_loader.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
