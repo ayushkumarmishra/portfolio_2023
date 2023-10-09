@@ -6,6 +6,7 @@ import HeaderNavbar from "./components/Navbar/HeaderNavbar";
 import Preloader from "./components/Preloader/preloader";
 import Cursor from "./components/Cursor/CustomCursor";
 import About from "./components/About/About";
+import CommonNavbar from "./components/Navbar/CommonNavbar";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -21,6 +22,7 @@ function App() {
       {isLoaded && (
         <div>
           <Cursor />
+          <CommonNavbar />
           <HeaderNavbar />
           <Home />
           {/* <About /> */}
