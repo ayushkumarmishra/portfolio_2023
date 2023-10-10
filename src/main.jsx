@@ -5,6 +5,13 @@ import "./index.css";
 import Home from "./components/Home/Home.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Error from "./components/Error.jsx";
+import About from "./components/About/About.jsx";
+import Skills from "./components/Skills/Skill.jsx";
+import Project from "./components/Projects/Project.jsx";
+import Experience from "./components/Experience/Experience.jsx";
+import Resume from "./components/Resume/Resume.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +21,30 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
+      },
+      {
+        path: "/projects",
+        element: <Project />,
+      },
+      {
+        path: "/experiences",
+        element: <Experience />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
       },
     ],
   },

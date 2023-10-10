@@ -19,7 +19,7 @@ const CommonNavbar = () => {
   return (
     <nav className="flex flex-col z-50 justify-center items-baseline w-auto h-auto bg-opacity-20 bg-grey px-2 py-6 rounded-full fixed transform -translate-x-1/5  right-4 bottom-1/4">
       <Link
-        to=""
+        to="/"
         className={`btnc ${
           activeButton === "home" ? "bg-active" : ""
         } mr-2 flex p-4 rounded-full hover:bg-opacity-50 hover:bg-active`}
@@ -28,7 +28,7 @@ const CommonNavbar = () => {
         <HomeIcon />
       </Link>
       <Link
-        to=""
+        to="/about"
         className={`btnc ${
           activeButton === "about" ? "bg-active" : ""
         } flex mx-2  p-4 rounded-full hover:bg-opacity-50  hover:bg-active`}
@@ -37,7 +37,7 @@ const CommonNavbar = () => {
         <AboutIcon />
       </Link>
       <Link
-        to=""
+        to="/skills"
         className={`btnc ${
           activeButton === "skills" ? "bg-active" : ""
         } flex mx-2  p-4 rounded-full hover:bg-opacity-50 hover:bg-active`}
@@ -46,7 +46,7 @@ const CommonNavbar = () => {
         <SkillIcon />
       </Link>
       <Link
-        to=""
+        to="/projects"
         className={`btnc ${
           activeButton === "projects" ? "bg-active" : ""
         } flex mx-2  p-4 rounded-full hover:bg-opacity-50 hover:bg-active`}
@@ -55,7 +55,7 @@ const CommonNavbar = () => {
         <ProjectIcon />
       </Link>
       <Link
-        to=""
+        to="/experiences"
         className={`btnc ${
           activeButton === "experience" ? "bg-active" : ""
         } flex p-4 rounded-full hover:bg-opacity-50 hover:bg-active mx-2`}
@@ -64,7 +64,7 @@ const CommonNavbar = () => {
         <ExperienceIcon />
       </Link>
       <Link
-        to=""
+        to="/contact"
         className={`btnc ${
           activeButton === "contacts" ? "bg-active" : ""
         } flex mx-2 p-4 rounded-full hover:bg-opacity-50 hover:bg-active`}
@@ -73,7 +73,7 @@ const CommonNavbar = () => {
         <ContactlIcon />
       </Link>
       <Link
-        to=""
+        to="/resume"
         className={`btnc ${
           activeButton === "resume" ? "bg-active" : ""
         } flex ml-2  p-4 rounded-full hover:bg-opacity-50 hover:bg-active `}

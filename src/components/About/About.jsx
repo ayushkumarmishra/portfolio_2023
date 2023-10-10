@@ -1,22 +1,29 @@
+/* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "../Home/AnimatedText";
 import Layout from "../Home/Layout";
 import ayush from "../../../public/about.jpg";
 import { motion } from "framer-motion";
+import Education from "./Education";
 const About = () => {
   return (
     <>
-      <head>
+      {/* <head>
         <title>Know Me Better | About Page</title>
         <meta name="description" content="just some description" />
-      </head>
+      </head> */}
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-14 ">
           <AnimatedText text="Passion fuels Purpose!" className="mb-14" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-5 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold text-dark/75 underline underline-offset-3">
-                Biography
-              </h2>
+              <div className="font-sans overflow-ellipsis mb-3 text-dark/60 w-full font-extrabold !items-start text-2xl uppercase flex flex-row">
+                <h2 className="mr-1">A</h2>
+                <h2 className="mr-1 text-5xl tracking-widest">B</h2>
+                <h2 className="mr-1">O</h2>
+                <h2 className="mr-1">U</h2>
+                <h2 className="mr-1">T</h2>
+                <hr className="w-full mx-auto border-2 mt-3 h-0 mb-3 " />
+              </div>
               <p className="font-semibold">
                 Hi, I'm Ayush Mishra, a web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
@@ -55,6 +62,7 @@ const About = () => {
               />
             </div>
           </div>
+          <Education />
         </Layout>
       </main>
     </>
