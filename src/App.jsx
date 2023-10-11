@@ -17,10 +17,10 @@ function App() {
 
   return (
     <>
-      {/* {!isLoaded && <Preloader />} */}
+      {!isLoaded && <Preloader />}
       {isLoaded && (
         <div>
-          {/* <Cursor /> */}
+          <Cursor />
           <CommonNavbar />
           <HeaderNavbar />
           <Outlet />
