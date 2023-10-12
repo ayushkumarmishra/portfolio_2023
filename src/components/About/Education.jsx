@@ -11,7 +11,11 @@ const Details = ({ Name, Place, Degree, Branch, time, CGPA }) => {
       className="flex flex-col mx-auto items-center justify-between my-8 first:mt-0 last:mb-0 w-[70%]"
     >
       <LiIcon referenec={ref} />
-      <div>
+      <motion.div
+        initial={{ y: 50, scale: 1 }}
+        whileInView={{ y: 0 }}
+        transition={{ duartion: 0.8, type: "spring" }}
+      >
         <span className="flex flex-row justify-between items-center">
           <motion.h3 className="font-bold capitalize text-education text-2xl">
             {Name}
@@ -35,7 +39,7 @@ const Details = ({ Name, Place, Degree, Branch, time, CGPA }) => {
           iste obcaecati blanditiis? Incidunt neque eum ut repudiandae,
           laudantium eius ea nisi numquam cum!
         </p>
-      </div>
+      </motion.div>
     </li>
   );
 };
