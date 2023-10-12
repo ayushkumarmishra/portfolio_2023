@@ -4,6 +4,7 @@ import Layout from "../Home/Layout";
 import ayush from "../../../public/about.jpg";
 import { motion } from "framer-motion";
 import Education from "./Education";
+import { Link as ScrollLink } from "react-scroll";
 const About = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const About = () => {
         <meta name="description" content="just some description" />
       </head> */}
       <main className="flex w-full flex-col items-center justify-center">
-        <Layout className="pt-14 ">
+        <Layout className="pt-14 mb-0">
           <AnimatedText text="Passion fuels Purpose!" className="mb-14" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-5 flex flex-col items-start justify-start">
@@ -62,6 +63,21 @@ const About = () => {
               />
             </div>
           </div>
+          <ScrollLink
+            to="education-section"
+            smooth={true}
+            duration={500}
+            className=""
+          >
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className="btn text-grey"
+            >
+              Press to Scroll Down
+            </motion.button>
+          </ScrollLink>
+        </Layout>
+        <Layout className="!pb-0">
           <Education />
         </Layout>
       </main>

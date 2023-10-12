@@ -4,9 +4,13 @@ import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
 const Details = ({ Name, Place, Degree, Branch, time, CGPA }) => {
+  const ref = useRef(null);
   return (
-    <li className="flex flex-col mx-auto items-center justify-between my-8 first:mt-0 last:mb-0 w-[70%]">
-      <LiIcon />
+    <li
+      ref={ref}
+      className="flex flex-col mx-auto items-center justify-between my-8 first:mt-0 last:mb-0 w-[70%]"
+    >
+      <LiIcon referenec={ref} />
       <div>
         <span className="flex flex-row justify-between items-center">
           <motion.h3 className="font-bold capitalize text-education text-2xl">
@@ -26,7 +30,10 @@ const Details = ({ Name, Place, Degree, Branch, time, CGPA }) => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           molestias id corrupti modi porro commodi deleniti iure beatae dicta
           eaque nesciunt minima totam distinctio similique possimus, veniam
-          odio, nobis vitae.
+          odio, nobis vitae. Lorem ipsum dolor, sit amet consectetur adipisicing
+          elit. Reprehenderit magnam aliquid, consequatur veniam quis ea. Earum
+          iste obcaecati blanditiis? Incidunt neque eum ut repudiandae,
+          laudantium eius ea nisi numquam cum!
         </p>
       </div>
     </li>
@@ -40,7 +47,7 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-52">
+    <div className="min-h-screen" id="education-section">
       <div className="font-sans overflow-ellipsis mb-3 text-dark/60 w-7/12 font-extrabold !items-start text-2xl uppercase flex flex-row">
         <h2 className="mr-1">E</h2>
         <h2 className="mr-1 text-5xl tracking-widest">D</h2>
@@ -56,7 +63,7 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative my-32">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-8 top-0 w-[4px] h-full bg-dark rounded-md origin-top"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
         ></motion.div>
         <ul className="w-full flex flex-col items-start justify-between ml-12">
           <Details
