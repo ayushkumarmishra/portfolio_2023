@@ -48,7 +48,7 @@ const Education = () => {
   });
   return (
     <div className="min-h-screen" id="education-section">
-      <div className="font-sans overflow-ellipsis mb-3 text-dark/60 w-7/12 font-extrabold !items-start text-2xl uppercase flex flex-row">
+      <div className="pt-10 font-sans overflow-ellipsis mb-3 text-dark/60 w-7/12 font-extrabold !items-start text-2xl uppercase flex flex-row">
         <h2 className="mr-1">E</h2>
         <h2 className="mr-1 text-5xl tracking-widest">D</h2>
         <h2 className="mr-1">U</h2>

@@ -13,11 +13,11 @@ const About = () => {
         <meta name="description" content="just some description" />
       </head> */}
       <main className="flex w-full flex-col items-center justify-center">
-        <Layout className="pt-14 mb-0">
+        <Layout className="pt-12 mb-0 ">
           <AnimatedText text="Passion fuels Purpose!" className="mb-14" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-5 flex flex-col items-start justify-start">
-              <div className="font-sans overflow-ellipsis mb-3 text-dark/60 w-full font-extrabold !items-start text-2xl uppercase flex flex-row">
+              <div className="font-sans overflow-ellipsis mb-4 text-dark/60 w-full font-extrabold !items-start text-2xl uppercase flex flex-row">
                 <h2 className="mr-1">A</h2>
                 <h2 className="mr-1 text-5xl tracking-widest">B</h2>
                 <h2 className="mr-1">O</h2>
@@ -66,14 +66,33 @@ const About = () => {
           <ScrollLink
             to="education-section"
             smooth={true}
-            duration={500}
-            className=""
+            duration={1000}
+            className="!justify-center !items-center left-[50%] absolute"
           >
             <motion.button
               whileHover={{ scale: 1.1 }}
-              className="btn text-grey"
+              className="bg-sc btn w-[35px] h-[64px] rounded-full border-4 border-dark flex justify-center items-start p-2"
             >
-              Press to Scroll Down
+              <div
+                className="relative h-[50px]"
+                // style={{
+                //   position: "relative",
+                //   height: "50px",
+                // }}
+              >
+                <motion.div
+                  animate={{
+                    y: ["-10%", "200%", "-10%"], //Move the div vertically from 0% to 100%
+                  }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 2,
+                  }}
+                  className="w-3 h-3 rounded-full "
+                >
+                  <div className="w-3 h-3 rounded-full bg-orange "></div>
+                </motion.div>
+              </div>
             </motion.button>
           </ScrollLink>
         </Layout>
