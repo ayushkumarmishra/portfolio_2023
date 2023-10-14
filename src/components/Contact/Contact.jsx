@@ -63,6 +63,7 @@ const contact = () => {
               </div>
             </div>
             <div className="flex space-x-4 text-lg">
+              <h2 className="font-bold">Follow me</h2>
               <motion.a
                 href="https://www.linkedin.com/in/ayushkumarmishra/"
                 target={"_blank"}
