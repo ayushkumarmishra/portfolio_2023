@@ -37,9 +37,15 @@ const contact = () => {
           <div className="flex flex-col justify-between space-y-8 ">
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Say Hello</h1>
-              <p className="pt-2 text-cyan/ text-sm">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Incidunt eos temporibus veniam laboriosam quaerat,o quos autem.
+              <p className="pt-3 font-montserrat text-sm">
+                Thank you for reaching out. I'm excited to hear from you.
+                Whether you have a project idea, a collaboration proposal, or
+                just want to say hi, your message is important to me.
+              </p>
+              <p className="pt-2 font-montserrat text-sm">
+                Feel free to share the details of your inquiry, and I'll get
+                back to you as soon as possible. Your interest in my work means
+                a lot.
               </p>
             </div>
             <div className="flex flex-col space-y-4 text-white-100 ">
