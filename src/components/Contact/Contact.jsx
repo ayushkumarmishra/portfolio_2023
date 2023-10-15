@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "../Home/AnimatedText";
 import Layout from "../Home/Layout";
 import { motion } from "framer-motion";

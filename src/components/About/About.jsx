@@ -5,6 +5,12 @@ import ayush from "../../../public/about.jpg";
 import { motion } from "framer-motion";
 import Education from "./Education";
 import { Link as ScrollLink } from "react-scroll";
+import {
+  AgeIcon,
+  InterestIcon,
+  LocationIcon,
+  NationalityIcon,
+} from "../Navbar/Icons";
 const About = () => {
   return (
     <>
@@ -44,7 +50,42 @@ const About = () => {
                 forward to the opportunity to bring my skills and passion to
                 your next project.
               </p>
+              <motion.div
+                initial={{ y: 50 }}
+                whileInView={{ y: 0 }}
+                transition={{
+                  duration: 1.2,
+                  type: "spring",
+                }}
+                className="flex flex-row w-full  py-8 justify-center items-center"
+              >
+                <div className="flex-row w-[50%] space-y-6">
+                  <div className="flex flex-row w-full space-x-2 items-center ">
+                    <AgeIcon />
+                    <span className="font-bold">Age: </span>
+                    <span>23</span>
+                  </div>
+                  <div className="flex flex-row w-full space-x-1 items-center ">
+                    <LocationIcon fill="black" />
+                    <span className="font-bold">Location :</span>
+                    <span>Hyderabad, India</span>
+                  </div>
+                </div>
+                <div className="flex-row w-[50%] space-y-6 pt-0 items-center ">
+                  <div className="flex flex-row w-full space-x-1 ">
+                    <NationalityIcon />
+                    <span className="font-bold">Nationality :</span>
+                    <span>Indian</span>
+                  </div>
+                  <div className="flex flex-row w-full space-x-1 items-center ">
+                    <InterestIcon />
+                    <span className="font-bold">Interests: </span>
+                    <span>Cricket, Gym, Travelling.</span>
+                  </div>
+                </div>
+              </motion.div>
             </div>
+
             <div className="col-span-3 relative h-max border-4 border-solid rounded-3xl border-dark bg-light p-8 items-center justify-center">
               <motion.div
                 className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-3xl bg-dark"
