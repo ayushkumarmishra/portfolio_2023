@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
+import LogoImage from "../../assets/logo.png";
 import {
   DiscordIcon,
   GithubIcon,
@@ -13,11 +14,7 @@ const HeaderNavbar = () => {
   return (
     <header className="w-full px-20 py-2 font-medium flex items-center justify-between bg-light">
       <Link to="/" className="flex justify-center items-center">
-        <img
-          className="h-20 w-auto"
-          src="../../../public/logo.png"
-          alt="logo_ayush_mishra"
-        />
+        <img className="h-20 w-auto" src={LogoImage} alt="logo_ayush_mishra" />
       </Link>
       <nav>
         <h2>
