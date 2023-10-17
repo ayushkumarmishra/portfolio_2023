@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 const HeaderNavbar = () => {
   return (
-    <header className="w-full px-20 py-2 font-medium flex items-center justify-between">
+    <header className="w-full px-20 py-2 font-medium flex items-center justify-between bg-light">
       <Link to="/" className="flex justify-center items-center">
         <img
           className="h-20 w-auto"

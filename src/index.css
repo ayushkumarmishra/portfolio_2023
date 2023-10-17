@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+html {
+    --line-color: #ced1d7;
+}
+
 @keyframes wave-animation {
 
     0%,

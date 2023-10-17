@@ -14,6 +14,8 @@ import mongodb from "../assets/mongodb.png";
 import git from "../assets/git.png";
 import cpp from "../assets/c.svg";
 import flutter from "../assets/flutter.svg";
+import Hashedin from "../assets/hashedin.png";
+import Bajaj from "../assets/bajaj.png";
 
 const skillTopic = [
   {
@@ -33,6 +35,7 @@ const skillTopic = [
     icon: creator,
   },
 ];
+
 const services = [
   {
     title: "HTML 5",
@@ -84,4 +87,39 @@ const services = [
   },
 ];
 
-export { services, skillTopic };
+const experienceData = [
+  {
+    title: "Software Engineering Associate",
+    companyName: "HashedIn By Deloitte",
+    location: "Bangalore, India",
+    description: {
+      first:
+        "Worked with the team developing a product that aims to provide Car-Pooling as a one-stop solution for daily commute for the employees, a B2B carpooling app.",
+      second:
+        "Developed frontend using Flutter and used Node.js for backend and Firebase and its services for Database.",
+    },
+
+    icon: Hashedin,
+    date: "March, 2023 - June, 2023",
+    companyLink: "https://hashedin.com/",
+    certificateLink:
+      "https://drive.google.com/file/d/1DK0jnU2CpJfeIJcVy1t3jeh3ofSuTqua/view",
+  },
+  {
+    title: "Frontend Development Intern",
+    companyName: "Bajaj Finserv Health",
+    location: "Pune, India",
+    description: {
+      first:
+        "Upgraded the location picker and the Search bar Feature in the health library part of the website that allows the user to search their doctor and clinic’s based on their specific location.",
+      second:
+        "The technologies used were Typescript, Emotionjs, Next.js and React.js.",
+    },
+    icon: Bajaj,
+    date: "Jan, 2023 - Mar, 2023",
+    companyLink: "https://www.bajajfinservhealth.in/",
+    certificateLink: "",
+  },
+];
+
+export { services, skillTopic, experienceData };

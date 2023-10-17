@@ -103,7 +103,7 @@ function Home() {
               <Link
                 to="/contacts"
                 className="flex items-center bg-white text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light 
-          border-2 border-solid border-transparent hover:border-dark
+          border-2 border-solid border-dark hover:border-dark
           mx-4"
               >
                 Contact
