@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import AnimatedText from "../Home/AnimatedText";
 import Layout from "../Home/Layout";
 
@@ -11,7 +10,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experienceData } from "../../constants";
 import React from "react";
-import { Button } from "react-scroll";
+
 import { Link } from "react-router-dom";
 
 const Experience = () => {
