@@ -1,62 +1,39 @@
 import Layout from "./Layout";
 import ProfilePic from "../../../public/developer.png";
 import AnimatedText from "./AnimatedText";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { LinkArrow } from "../Navbar/Icons";
 import lightBulb from "../../../public/bulb.svg";
-import { useCallback, useEffect } from "react";
+import { Tilt } from "react-tilt";
+import { fadeIn } from "../../utils/motion";
 
 function Home() {
-  const x = useMotionValue(200);
-  const y = useMotionValue(200);
-
-  const rotateX = useTransform(y, [0, 400], [45, -45]);
-  const rotateY = useTransform(x, [0, 400], [-45, 45]);
-
-  const handleMouse = useCallback(
-    (event) => {
-      const rect = event.currentTarget.getBoundingClientRect();
-      x.set(event.clientX - rect.left);
-      y.set(event.clientY - rect.top);
-    },
-    [x, y]
-  );
-
-  useEffect(() => {
-    function handleMouseLeave() {
-      x.set(200);
-      y.set(200);
-    }
-
-    const pictureElement = document.querySelector(".picture-container");
-
-    pictureElement.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      pictureElement.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, [x, y]);
-
   return (
     <main className="w-full flex text-dark min-h-screen items-center bg-light">
       <Layout className="pt-0">
         <div className="flex items-center justify-between w-full">
-          <motion.div
-            className="w-1/2 picture-container "
-            onMouseMove={handleMouse}
-            style={{
-              rotateX,
-              rotateY,
-              transformStyle: "preserve-3d",
-            }}
-          >
-            <img
-              src={ProfilePic}
-              alt="profile_pic_ayush"
-              className="w-full h-auto"
-            />
-          </motion.div>
+          <Tilt className="xs:w-[250px] w-1/2">
+            <motion.div
+              className="w-[85%] picture-container"
+              variants={fadeIn("right", "spring", 0.5, 0.75)}
+            >
+              <motion.div
+                className=""
+                options={{
+                  max: 45,
+                  scale: 1,
+                  speed: 450,
+                }}
+              >
+                <img
+                  src={ProfilePic}
+                  alt="profile_pic_ayush"
+                  className="w-full h-auto"
+                />
+              </motion.div>
+            </motion.div>
+          </Tilt>
           <div className="w-1/2 font-montserrat flex flex-col self-center ">
             <h1 className="flex flex-row items-center justify-start min-w-fit">
               <AnimatedText
@@ -101,7 +78,7 @@ function Home() {
                 Resume <LinkArrow className={"w-6 ml-1"} />
               </Link>
               <Link
-                to="/contacts"
+                to="/contact"
                 className="flex items-center bg-white text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light 
           border-2 border-solid border-dark hover:border-dark
           mx-4"
@@ -112,7 +89,7 @@ function Home() {
           </div>
         </div>
       </Layout>
-      <div className="absolute right-8 bottom-8 inline-block w-28">
+      <div className="absolute right-8 bottom-8 inline-block w-16 ">
         <img src={lightBulb} alt="ayush" className="w-full h-auto" />
       </div>
     </main>
