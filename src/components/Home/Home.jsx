@@ -87,7 +87,7 @@ function Home() {
                 to="/resume"
                 className="flex items-center justify-center bg-dark text-light p-2 px-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-light 
                 hover:text-dark border-2 border-solid border-transparent hover:border-dark
-                w-full sm:w-auto min-w-[120px]"
+                w-fit sm:w-auto min-w-[120px]"
               >
                 Resume <LinkArrow className="w-4 sm:w-5 ml-1" />
               </Link>
@@ -95,7 +95,7 @@ function Home() {
                 to="/contact"
                 className="flex items-center justify-center bg-light text-dark p-2 px-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-dark hover:text-light 
                 border-2 border-solid border-dark
-                w-full sm:w-auto min-w-[120px]"
+                w-fit sm:w-auto min-w-[120px]"
               >
                 Contact
               </Link>
