@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 const Layout = ({ children, className = "" }) => {
   return (
     <div
-      className={`w-full h-full inline-block p-32 z-0 bg-light ${className}`}
+      className={`w-full h-full inline-block px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 z-0 ${className}`}
     >
       {children}
     </div>

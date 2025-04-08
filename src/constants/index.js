@@ -89,6 +89,21 @@ const services = [
 
 const experienceData = [
   {
+    title: "Software Engineer 1",
+    companyName: "HashedIn By Deloitte",
+    location: "Hyderabad, India",
+    description: {
+      first:
+        "Developed high-performance, scalable UI components using React.js, DCL-UI, Tailwind CSS, and Storybook, ensuring 100% design consistency and reducing UI defects by 25%.",
+      second:
+        "Led the migration from Enzyme to React Testing Library, increasing test coverage from 60% to 88% and establishing 100% coverage standards for functions, statements, and branches.",
+    },
+    icon: Hashedin,
+    date: "Nov, 2023 - Present",
+    companyLink: "https://hashedin.com/",
+    certificateLink: "",
+  },
+  {
     title: "Software Engineering Associate",
     companyName: "HashedIn By Deloitte",
     location: "Bangalore, India",
@@ -98,7 +113,6 @@ const experienceData = [
       second:
         "Developed frontend using Flutter and used Node.js for backend and Firebase and its services for Database.",
     },
-
     icon: Hashedin,
     date: "March, 2023 - June, 2023",
     companyLink: "https://hashedin.com/",
@@ -111,7 +125,7 @@ const experienceData = [
     location: "Pune, India",
     description: {
       first:
-        "Upgraded the location picker and the Search bar Feature in the health library part of the website that allows the user to search their doctor and clinic’s based on their specific location.",
+        "Upgraded the location picker and the Search bar Feature in the health library part of the website that allows the user to search their doctor and clinic's based on their specific location.",
       second:
         "The technologies used were Typescript, Emotionjs, Next.js and React.js.",
     },

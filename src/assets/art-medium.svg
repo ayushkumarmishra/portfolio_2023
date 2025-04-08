@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0F0F0F"/>
+  
+  <!-- Video Player Container -->
+  <rect x="50" y="50" width="700" height="400" rx="10" fill="#1F1F1F"/>
+  
+  <!-- Video Thumbnail -->
+  <rect x="100" y="100" width="600" height="300" rx="5" fill="#272727"/>
+  
+  <!-- Play Button -->
+  <circle cx="400" cy="250" r="50" fill="rgba(255,255,255,0.1)"/>
+  <path d="M380 230L430 250L380 270V230Z" fill="white"/>
+  
+  <!-- Video Controls -->
+  <rect x="100" y="420" width="600" height="10" rx="5" fill="#3F3F3F"/>
+  <rect x="100" y="420" width="300" height="10" rx="5" fill="#FF0000"/>
+  
+  <!-- Control Buttons -->
+  <circle cx="120" cy="450" r="15" fill="#3F3F3F"/>
+  <path d="M115 445H125M115 455H125" stroke="white" stroke-width="2"/>
+  
+  <circle cx="160" cy="450" r="15" fill="#3F3F3F"/>
+  <path d="M155 445H165M155 455H165" stroke="white" stroke-width="2"/>
+  
+  <circle cx="680" cy="450" r="15" fill="#3F3F3F"/>
+  <path d="M675 445H685M675 455H685" stroke="white" stroke-width="2"/>
+  
+  <!-- Video Info -->
+  <rect x="100" y="480" width="400" height="20" rx="5" fill="#3F3F3F"/>
+  <rect x="100" y="510" width="300" height="15" rx="5" fill="#3F3F3F"/>
+  
+  <!-- Upload Button -->
+  <rect x="650" y="480" width="50" height="50" rx="10" fill="#FF0000"/>
+  <path d="M665 495V515M655 505H675" stroke="white" stroke-width="3"/>
+  
+  <!-- View Count -->
+  <circle cx="520" cy="450" r="5" fill="#3F3F3F"/>
+  <rect x="530" y="445" width="40" height="10" rx="5" fill="#3F3F3F"/>
+</svg> 

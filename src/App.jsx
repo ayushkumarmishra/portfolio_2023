@@ -1,4 +1,3 @@
-// import "./App.css";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import HeaderNavbar from "./components/Navbar/HeaderNavbar";
@@ -6,6 +5,7 @@ import Preloader from "./components/Preloader/Preloader";
 import Cursor from "./components/Cursor/CustomCursor";
 import CommonNavbar from "./components/Navbar/CommonNavbar";
 import { Outlet } from "react-router-dom";
+
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -19,11 +19,13 @@ function App() {
     <>
       {!isLoaded && <Preloader />}
       {isLoaded && (
-        <div>
+        <div className="min-h-screen flex flex-col">
           <Cursor />
           <CommonNavbar />
           <HeaderNavbar />
-          <Outlet />
+          <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8">
+            <Outlet />
+          </main>
           <Footer />
         </div>
       )}

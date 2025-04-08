@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const MotionLink = motion(Link);
 const Logo = () => {
   return (
-    <div className="flex center-items justify-center mt-2">
+    <div className="flex items-center justify-center">
       <MotionLink
         to="/"
-        className="w-20 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold"
+        className="w-10 h-8 sm:w-12 sm:h-10 md:w-16 md:h-12 bg-dark text-light flex items-center justify-center rounded-full text-base sm:text-lg md:text-xl font-bold"
         whileHover={{
           background: [
             "#121212",
