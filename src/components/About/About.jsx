@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "../Home/AnimatedText";
 import Layout from "../Home/Layout";
-import ayush from "../../../public/about.jpg";
+import aboutPic from "../../assets/about.jpg";
 import { motion } from "framer-motion";
 import Education from "./Education";
 import { Link as ScrollLink } from "react-scroll";
@@ -95,7 +95,7 @@ const About = () => {
               }}
             ></motion.div>
             <motion.img
-              src={ayush}
+              src={aboutPic}
               alt="ayush"
               className="w-full h-auto rounded-3xl"
               whileHover={{ scale: 1.05 }}

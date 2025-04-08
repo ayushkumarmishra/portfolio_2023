@@ -3,12 +3,12 @@ import AnimatedText from "./AnimatedText";
 import Layout from "./Layout";
 import { LinkArrow } from "../Navbar/Icons";
 import { motion } from "framer-motion";
-import profilePic from "../../../public/profile_pic.png";
+import profilePic from "../../assets/profile_pic.png";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../../utils/motion";
-import lightBulb from "../../../public/bulb.svg";
+import lightBulb from "../../assets/bulb.svg";
 
 function Home() {
   return (
